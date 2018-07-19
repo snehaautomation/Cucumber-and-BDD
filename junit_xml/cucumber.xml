@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="24.849749">
+<testcase classname="Amazon Login Page" name="Amazon Login Page Test Scenario" time="13.610097">
+<system-out><![CDATA[Given User is already on Amazon Home Page...................................passed
+When title of page is Amazon................................................passed
+Then user hovers on signin..................................................passed
+When title of page is signinemailid.........................................passed
+Then user enters emailid as "ashsne6@gmail.com".............................passed
+And user clicks on continue.................................................passed
+Then user enters password as "mybestbuddy"..................................passed
+And user clicks on signinbutton.............................................passed
+Then user is on his account.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Login Page" name="Amazon Login Page Test Scenario 2" time="11.239652">
+<failure message="junit.framework.ComparisonFailure: expected:&lt;Amazon[.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs &amp; more]&gt; but was:&lt;Amazon[ Sign In]&gt;&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:100)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:107)&#13;&#10;&#9;at stepDefinition.LoginStepDef.user_is_on_his_account(LoginStepDef.java:80)&#13;&#10;&#9;at ✽.Then user is on his account(C:/Users/sneha/eclipse-workspace/CucumberBddProj/src/main/java/Features/login.feature:29)&#13;&#10;"><![CDATA[Given User is already on Amazon Home Page...................................passed
+When title of page is Amazon................................................passed
+Then user hovers on signin..................................................passed
+When title of page is signinemailid.........................................passed
+Then user enters emailid as "snehaashwin15@gmail.com".......................passed
+And user clicks on continue.................................................passed
+Then user enters password as "Ashsne15".....................................passed
+And user clicks on signinbutton.............................................passed
+Then user is on his account.................................................failed
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<Amazon[.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more]> but was:<Amazon[ Sign In]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at stepDefinition.LoginStepDef.user_is_on_his_account(LoginStepDef.java:80)
+	at ✽.Then user is on his account(C:/Users/sneha/eclipse-workspace/CucumberBddProj/src/main/java/Features/login.feature:29)
+]]></failure>
+</testcase>
+</testsuite>
