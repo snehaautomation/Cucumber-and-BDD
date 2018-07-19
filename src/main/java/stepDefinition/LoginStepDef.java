@@ -78,6 +78,6 @@ public class LoginStepDef {
 		String title = driver.getTitle();
 		System.out.println("Title of useraccnt is :"+title);
 		Assert.assertEquals("Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more", title);
-	    driver.quit();
+//	    driver.quit();
 	}
 }
